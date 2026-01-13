@@ -8,7 +8,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
-  <title>Communality</title>
+  <title>Коммунальные услуги</title>
 </svelte:head>
 
 {@render children()}

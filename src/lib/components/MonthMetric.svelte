@@ -14,23 +14,16 @@
 <style>
   li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    padding: 0.5rem;
-    border: 1px solid rgb(172, 172, 172);
-    min-height: 5rem;
-    corner-shape: squircle;
-    border-radius: 20px;
+    justify-content: space-between;
   }
 
   .label {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .metric {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-block: auto;
   }
 </style>

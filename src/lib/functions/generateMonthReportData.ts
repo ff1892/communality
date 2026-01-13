@@ -17,9 +17,6 @@ export const generateMonthReportData = (
   if (olderMetric.checkedAt >= newerMetric.checkedAt) {
     throw new Error('Metrics are not in chronological order');
   }
-  if (olderMetric.rateId !== newerMetric.rateId) {
-    throw new Error('Metrics do not belong to the same rate');
-  }
 
   const diff = {
     electricityT1: newerMetric.electricityT1 - olderMetric.electricityT1,
@@ -42,5 +39,16 @@ export const generateMonthReportData = (
   const waterTotal = cost.waterCold + cost.waterHot;
   const total = electricityTotal + waterTotal + cost.internet;
 
-  return { newerMetric, olderMetric, diff, rate, cost, electricityTotal, waterTotal, total };
+  const monthReport = {
+    newerMetric,
+    olderMetric,
+    diff,
+    rate,
+    cost,
+    electricityTotal,
+    waterTotal,
+    total,
+  };
+
+  return monthReport;
 };
