@@ -1,7 +1,7 @@
 export type RateDB = {
   id: string;
-  created_at: Date;
-  start_day: Date;
+  created_at: string;
+  start_day: string;
   electricity_t1: number;
   electricity_t2: number;
   electricity_t3: number;

@@ -1,7 +1,7 @@
 export type MetricDB = {
   id: string;
-  created_at: Date;
-  checked_at: Date;
+  created_at: string;
+  checked_at: string;
   electricity_t1: number;
   electricity_t2: number;
   electricity_t3: number;
