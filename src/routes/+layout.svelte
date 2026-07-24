@@ -1,14 +1,19 @@
 <script lang="ts">
-  import favicon from '$lib/assets/favicon.svg';
   import '$lib/styles/normalize.css';
   import '$lib/styles/global.css';
+  import Header from '$lib/components/Header.svelte';
 
   let { children } = $props();
 </script>
 
 <svelte:head>
-  <link rel="icon" href={favicon} />
   <title>Коммунальные услуги</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 </svelte:head>
 
-{@render children()}
+<Header />
+
+<div class="page-wrapper">
+  {@render children()}
+</div>

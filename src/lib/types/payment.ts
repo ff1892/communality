@@ -1,0 +1,47 @@
+export type PaymentDB = {
+  id: string;
+  created_at: string;
+  period_from: string;
+  period_to: string;
+  metric_newer_id: string;
+  metric_older_id: string;
+  rate_id: string;
+  electricity_t1_diff: number;
+  electricity_t2_diff: number;
+  electricity_t3_diff: number;
+  water_cold_diff: number;
+  water_hot_diff: number;
+  electricity_t1_cost: number;
+  electricity_t2_cost: number;
+  electricity_t3_cost: number;
+  water_cold_cost: number;
+  water_hot_cost: number;
+  internet_cost: number;
+  electricity_total: number;
+  water_total: number;
+  total: number;
+};
+
+export type Payment = {
+  id: string;
+  createdAt: Date;
+  periodFrom: Date;
+  periodTo: Date;
+  metricNewerId: string;
+  metricOlderId: string;
+  rateId: string;
+  electricityT1Diff: number;
+  electricityT2Diff: number;
+  electricityT3Diff: number;
+  waterColdDiff: number;
+  waterHotDiff: number;
+  electricityT1Cost: number;
+  electricityT2Cost: number;
+  electricityT3Cost: number;
+  waterColdCost: number;
+  waterHotCost: number;
+  internetCost: number;
+  electricityTotal: number;
+  waterTotal: number;
+  total: number;
+};
