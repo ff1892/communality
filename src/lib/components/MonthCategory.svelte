@@ -2,23 +2,7 @@
   let { label, cost } = $props();
 </script>
 
-<li class="category-item">
-  <span class="label">{label}</span>
-  <span class="cost">{cost.toFixed(2)} ₽</span>
+<li class="receipt-row">
+  <span class="receipt-row-label">{label}</span>
+  <span class="receipt-row-value">{cost.toFixed(2)} P</span>
 </li>
-
-<style>
-  .category-item {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-  }
-
-  .label {
-    font-weight: 600;
-  }
-
-  .cost {
-    font-weight: 600;
-  }
-</style>

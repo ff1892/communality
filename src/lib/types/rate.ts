@@ -1,4 +1,5 @@
 export type RateDB = {
+  serial: number;
   id: string;
   created_at: string;
   start_day: string;
@@ -12,6 +13,7 @@ export type RateDB = {
 };
 
 export type Rate = {
+  serial: number;
   id: string;
   createdAt: Date;
   startDay: Date;
